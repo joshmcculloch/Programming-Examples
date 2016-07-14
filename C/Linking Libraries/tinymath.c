@@ -1,3 +1,6 @@
+/* This file contains the implementations for the various functions
+ * provided by our math library.
+ */
 double add(double a, double b) {
 	return a + b;
 }

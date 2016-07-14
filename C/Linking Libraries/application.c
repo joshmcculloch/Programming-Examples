@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include "tinymath.h"
 
+/* We check if a welcome message has been defined and define it if it 
+ * has not been. This allows us to define the welcome message in the 
+ * make file and have difference messages depending on the method of 
+ * linking. See the Makefile in this directory for more information.
+ */
 #ifndef WELCOME_MSG
 #define WELCOME_MSG "Linking test welcome message"
 #endif

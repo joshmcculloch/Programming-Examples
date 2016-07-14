@@ -1,7 +1,15 @@
-double add(double a, double b);
+#ifndef TINYMATH_H
+#define TINYMATH_H
 
-double subtract(double a, double b);
+/* Here we provide the traditional function prototypes to be used by 
+ * other code using our math library. 
+ */
+  
+double add(double, double);
 
-double multiply(double a, double b);
+double subtract(double, double);
 
-double divide(double a, double b);
+double multiply(double, double);
+
+double divide(double, double);
+#endif
