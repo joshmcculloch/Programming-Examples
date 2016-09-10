@@ -24,7 +24,7 @@ libtinymath.so : tinymath.o
 # against "-l:libtinymath.a". We also specify the custom welcome message
 # to be used by the program.
 static_application :  application.c libtinymath.a
-	gcc application.c -L. -l:libtinymath.a -o static_application \
+	gcc application.c -L. -ltinymath -o static_application \
 		-DWELCOME_MSG="\"This example is statically linked\""
 
 # When we compile our dynamically linked application the command is 
